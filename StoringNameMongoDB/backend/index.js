@@ -5,15 +5,13 @@ const app = express()
 const PORT = 5000
 
 const { Connect_MongoDB } = require("./MongoDB/connect");
-const { USER } = require("./MongoDB/Model");
+const { UserRoute } = require("./Routes/user")
 
 Connect_MongoDB()
 
 app.use(body_parser.json())
 app.use(cors())
 
-app.get( "/" , ( req , res ) => {
-    res.status(201).json({ "msg" : "Hello Received" })
-} )
+app.use("/user" , UserRoute)
 
 app.listen( PORT , () => console.log(`Server Started at\nhttp://localhost:${PORT}/`) )
