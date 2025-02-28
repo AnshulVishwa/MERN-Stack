@@ -10,6 +10,7 @@ function App() {
     try {
       const response = await axios.post("http://localhost:5000/submit", {username});
       alert(response.data.message); 
+      setUsername("")
     } catch (error) {
       console.error("Error submitting form:", error);
     }

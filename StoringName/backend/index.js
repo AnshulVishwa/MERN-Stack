@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const fs = require("fs")
 
 const app = express();
 
@@ -9,13 +10,9 @@ app.use(bodyParser.json());
 
 app.post("/submit", (req, res) => {
     const { username } = req.body;
-    
-    if (!username) {
-        return res.status(400).json({ message: "Username is required" });
-    }
-
-    console.log("Received Username:", username);
-
+    fs.appendFile( "./Database.txt" , `Username : ${username}\n` , (err) => {
+        console.log(err)
+    } )
     res.json({ message: `Username ${username} received successfully!` });
 });
 
