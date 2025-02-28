@@ -13,7 +13,7 @@ app.post("/submit", (req, res) => {
     fs.appendFile( "./Database.txt" , `Username : ${username}\n` , (err) => {
         console.log(err)
     } )
-    res.json({ message: `Username ${username} received successfully!` });
+    res.json({ msg: `Username ${username} received successfully!` });
 });
 
 app.listen(5000, () => console.log("Server Started at http://localhost:5000/"));
