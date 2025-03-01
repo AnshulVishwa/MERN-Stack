@@ -6,11 +6,11 @@ function App() {
   const [ id , setID ] = useState("")
   async function CreateUser(e) {
     e.preventDefault();
-    const response = await axios.post("http://localhost:5000/user" , {username})
+    const response = await axios.post("/api/user" , {username})
     alert(response.data.msg)
   }
   async function GetUser(){
-    const response = await axios.get(`http://localhost:5000/user/?id=${id}`)
+    const response = await axios.get(`/api/user/?id=${id}`)
     alert(response.data.msg)
   }
   return (
