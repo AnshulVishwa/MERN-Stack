@@ -2,10 +2,8 @@ const { USER } = require("../MongoDB/model")
 
 async function handlePostReqRes( req , res ) {
     if( !req.body ) return res.json({"message" : "Username password required"})
-        
-        const { username , password , value } = req.body
-        console.log(value)
-    
+    const { username , password , value } = req.body
+
     if( !username ) return res.json({"message" : "Username is required"})
     if( !password ) return res.json({"message" : "Password is required"})
 
@@ -15,7 +13,7 @@ async function handlePostReqRes( req , res ) {
     const result = await USER.create( {
         username,
         password,
-        value
+        "remember_me" : value
     } )
     if( !result )
         return res.json( { "message" : "Some error Occured" } )
