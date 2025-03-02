@@ -16,4 +16,4 @@ const Schema = mongoose.Schema({
 
 const USER = mongoose.model( "signup_info" , Schema )
 
-module.exports = { USER }
+module.exports = {USER}
