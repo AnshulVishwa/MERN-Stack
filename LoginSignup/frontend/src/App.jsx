@@ -19,6 +19,7 @@ function App() {
               <i className="fa-solid fa-user"/>
             </span>
             <input 
+              className='userinput'
               type={"text"} 
               name='username'
               value={username}
@@ -34,6 +35,7 @@ function App() {
               />
             </span>
             <input 
+              className='passinput'
               type={(eyes) ? "text" : "password"} 
               name='password'
               value={password}

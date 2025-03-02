@@ -83,6 +83,7 @@ input{
   padding-left: 1em;
   box-sizing: border-box;
   height: 75%;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
 span {
@@ -131,4 +132,8 @@ button {
 
 input::placeholder{
   color: #e0e0e0;
+}
+
+.userinput:focus > .username{
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
 }
