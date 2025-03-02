@@ -21,6 +21,16 @@ async function handlePostReqRes( req , res ) {
         return res.json( { "message" : `Welcome ${result.username}` } )
 }
 
+async function handleGetReqRes( req , res ) {
+    const { username , password } = req.query
+    console.log(req.query)
+    const allUsers = await USER.find()
+    const exists = allUsers.filter((v) => v.username == username && v.password == password)
+    if( exists.length == 0 ) return res.json({"message" : "user not found"})
+    res.json( { "message" : "User Found" } )
+}
+
 module.exports = {
-    handlePostReqRes
+    handlePostReqRes,
+    handleGetReqRes
 }
