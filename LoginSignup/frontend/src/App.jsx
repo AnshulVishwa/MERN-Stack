@@ -1,15 +1,24 @@
 import { useState } from 'react'
 import background from "./images/background.jpg"
+import axios from "axios"
 import './App.css'
 
 function App() {
   const [ username , setUsername ] = useState("")
   const [ password , setPassword ] = useState("")
   const [ eyes , setEyes ] = useState(false)
+
+  async function handlePostReqRes(e) {
+    e.preventDefault()
+    const value = (document.querySelector(".rememberInput").checked == "on") ? true : false
+    const response  = await axios.post("/api/user" , {username , password , value})
+    alert(response.data.message)     
+  }
+
   return (
     <>
       <img className='background' src={background} alt="" />
-      <form>
+      <form onSubmit={handlePostReqRes}>
         <img src={background} className="image" />
         <div className="formContent">
 
@@ -45,7 +54,11 @@ function App() {
           </div>
           <div className="rememberMe">
             <div className="input">
-              <input type="checkbox" />
+              <input 
+                type="checkbox"
+                name='rememberMe' 
+                className='rememberInput' 
+              />
               <span>Remember me</span>
             </div>
             <div className="login">
