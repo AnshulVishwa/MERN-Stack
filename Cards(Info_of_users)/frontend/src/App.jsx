@@ -1,12 +1,19 @@
 import './App.css'
-import curvy from "./assets/curvy.png"
 import logo from "./assets/logo.png"
 
 function App() {
   return (
     <>
-      <img className='blue-section' src={curvy} />
-      <section className="section1"></section>
+      <section className="section1 flex">
+        <div className="logo-content flex">
+          <h1>Welcome to</h1>
+          <div className="logo flex">
+            <img className='logo-img' src={logo}/>
+            <span className='textLogo'>Cardox</span>
+          </div>
+          <span>Where we store information of our users, we definitely keep a check on our user's privacy and keep their trust.</span>
+        </div>
+      </section>
     </>
   )
 }
