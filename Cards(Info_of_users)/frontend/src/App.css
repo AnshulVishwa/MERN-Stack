@@ -10,6 +10,7 @@
   position: relative;
   background-image: url("./assets/curvy.png");
   background-size: contain;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 .logo-content {
@@ -62,11 +63,12 @@ span {
 section.section2.flex {
   width: 47%;
   height: 100%;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 .innerDiv {
   height: 100%;
-  width: 80%;
+  width: 70%;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -79,23 +81,47 @@ main {
   align-items: start;
   width: 100%;
   font-size: larger;
+  color: #3C3277;
+}
+
+h1{
+  color: #3C3277;
 }
 
 .content {
-  display: flex
-;
+  display: flex;
   justify-content: start;
   align-items: center;
   width: 100%;
 }
 
-.textBox{
-  /* Full remaining width */
+.textBox {
   flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin-left: 1em;
+  box-sizing: border-box;
+  font-size: large;
+  color: #3C3277;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
+button {
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  border-radius: 50em;
+  color: white;
+  background: #4692d6;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
 
-
+button:hover{
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
 
 
 
