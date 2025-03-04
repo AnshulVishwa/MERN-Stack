@@ -1,16 +1,16 @@
 const express = require("express")
 const body_parser = require("body-parser")
 const cors = require("cors")
+const { ConnectTo_MongoDB } = require("./MongoDB/connection")
+const { UserRoute } = require("./Routes/user")
 
 const app = express()
 app.use( body_parser.json() )
 app.use( cors() )
+app.use( express.json() )
 
+app.use( "/info" , UserRoute )
 
-app.get( "/" , (req , res) => {
-    setTimeout( () => {
-        res.json({msg : "Hello Home"})
-    } , Math.floor(Math.random() * 10)*100 )
-} )
+ConnectTo_MongoDB()
 
 app.listen( 5000 , () => console.log("Server Started at port 5000") )
