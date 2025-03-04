@@ -11,6 +11,7 @@ function check_for_null( info ){
 
 function FormSubmition( info ) {
     const nullValues = check_for_null(info)
+    console.log(nullValues)
     return nullValues
 }
 
