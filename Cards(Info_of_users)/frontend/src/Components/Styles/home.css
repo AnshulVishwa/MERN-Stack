@@ -2,8 +2,52 @@
     height: 100vh;
     width: 100vw;
     flex-direction: column;
+    background-image: linear-gradient(to right , #E1E1E3 24% , #ECECEC 82%);
 }
 
-.middleDiv{
-    height: 90%;
+header.flex , .middleDiv {
+    position: relative;
 }
+
+img {
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.flex{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.middleDiv {
+    height: 90%;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(100% / 3);
+}
+
+.cardContent.flex {
+    width: 12em;
+    aspect-ratio: 1.2 / 1;
+    border-radius: 1em;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 1em 0;
+    backdrop-filter: blur(2px);
+    background: #ffffff2e;
+    cursor: pointer;
+}
+.cardContent.flex:hover {
+    box-shadow: 6px 6px 4px rgb(0 0 0 / 25%), inset 4px 4px 4px rgb(0 0 0 / 25%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+
