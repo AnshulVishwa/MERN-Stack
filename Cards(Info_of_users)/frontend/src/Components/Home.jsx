@@ -10,12 +10,15 @@ function Home() {
   const [ mainCard , setMainCard ] = useState()
 
   async function GetReq() {
-    const response = await axios.get( "http://localhost:5000/info" )
-    if( response ){
-      console.log(response.data.users)
-      setUsers(() => response.data.users.filter( (v , i) => ( i < 6 ) ))
-        console.log(users)
-    }
+    await axios.get( "http://localhost:5000/info" )
+    .then( (res) => {
+      // setUsers(() => res.data.users.filter( (v , i) => ( i < 6 ) ) )
+      setUsers(res.data.users)
+    } )
+    .catch( (err) => {
+      alert("Start your backend Buddy")
+      window.location.reload()
+    } )
   }
 
   useEffect( () => {
@@ -42,7 +45,7 @@ function Home() {
               ) )
             }
           </div>
-          <div  id={(mainCard) ? "setMainCard" : "hideMainCard"} className="sectionMainCard">
+          <div  id={(mainCard) ? "setMainCard" : "hideMainCard"} className="sectionMainCard flex">
             {mainCard && <Card users={mainCard} setMainCard={setMainCard} />}
           </div>
         </div>

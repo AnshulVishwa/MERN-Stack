@@ -1,82 +1,83 @@
-[
+  [
   {
-    "username": "Arpit",
-    "dob": "8/4/2008",
+    "username": "Harsh",
+    "dob": "15/3/2008",
     "age": 16,
     "gender": "Male",
     "profession": "Student",
-    "description": "A dedicated 11th-grade student passionate about science and technology. Enjoys coding and participates in various academic competitions."
+    "description": "A 11th-grade student passionate about physics and space exploration. Loves solving complex physics problems and aspires to be an aerospace engineer."
   },
   {
-    "username": "Sneha",
-    "dob": "12/10/2007",
+    "username": "Ritika",
+    "dob": "22/11/2007",
     "age": 17,
     "gender": "Female",
     "profession": "Student",
-    "description": "A hardworking 12th-grade student aiming to pursue medicine. Loves biology, participates in science fairs, and enjoys painting in her free time."
+    "description": "A diligent 12th-grade student who excels in chemistry and wants to pursue pharmacy. Enjoys conducting science experiments and reading research papers."
   },
   {
-    "username": "Rohan",
-    "dob": "5/6/2009",
+    "username": "Kabir",
+    "dob": "30/6/2009",
     "age": 15,
     "gender": "Male",
     "profession": "Student",
-    "description": "An inquisitive 10th-grade student with a deep interest in mathematics and physics. Aspires to be an engineer and enjoys robotics."
+    "description": "A curious 10th-grade student interested in artificial intelligence and robotics. Enjoys coding in Python and participating in hackathons."
   },
   {
-    "username": "Ananya",
-    "dob": "3/2/2008",
+    "username": "Sanya",
+    "dob": "18/2/2008",
     "age": 16,
     "gender": "Female",
     "profession": "Student",
-    "description": "An enthusiastic 11th-grade student who loves literature and creative writing. Actively participates in debate competitions and poetry slams."
+    "description": "A creative 11th-grade student with a love for poetry and storytelling. Actively participates in literature clubs and dreams of becoming a novelist."
   },
   {
-    "username": "Vikram",
-    "dob": "9/8/2006",
+    "username": "Ishaan",
+    "dob": "5/10/2006",
     "age": 18,
     "gender": "Male",
     "profession": "Student",
-    "description": "A disciplined 12th-grade student with a keen interest in commerce and economics. Aspires to be an entrepreneur and enjoys stock market analysis."
+    "description": "A determined 12th-grade student interested in business and entrepreneurship. Runs a small online store and enjoys reading business case studies."
   },
   {
-    "username": "Meera",
-    "dob": "14/5/2009",
+    "username": "Tanya",
+    "dob": "9/5/2009",
     "age": 15,
     "gender": "Female",
     "profession": "Student",
-    "description": "A bright and artistic 10th-grade student who excels in fine arts and music. Loves playing the violin and participates in school drama clubs."
+    "description": "A talented 10th-grade student passionate about music and dance. Plays the guitar and actively participates in school cultural events."
   },
   {
-    "username": "Yash",
-    "dob": "1/1/2007",
+    "username": "Aryan",
+    "dob": "1/7/2007",
     "age": 17,
     "gender": "Male",
     "profession": "Student",
-    "description": "A tech-savvy 12th-grade student with a passion for programming and cybersecurity. Loves hacking challenges and building mobile applications."
+    "description": "An aspiring software engineer in 12th grade, loves full-stack development and creating web apps. Enjoys competitive programming and open-source contributions."
   },
   {
-    "username": "Pooja",
-    "dob": "7/7/2008",
+    "username": "Kavya",
+    "dob": "11/12/2008",
     "age": 16,
     "gender": "Female",
     "profession": "Student",
-    "description": "An ambitious 11th-grade student passionate about psychology and human behavior. Enjoys researching and writing about mental health topics."
+    "description": "A bright 11th-grade student fascinated by psychology and human behavior. Loves studying cognitive science and aims to be a psychologist."
   },
   {
-    "username": "Aditya",
-    "dob": "20/11/2009",
+    "username": "Dev",
+    "dob": "25/9/2009",
     "age": 15,
     "gender": "Male",
     "profession": "Student",
-    "description": "A curious 10th-grade student fascinated by astronomy and space science. Loves stargazing, reading about astrophysics, and dreams of working at NASA."
+    "description": "A 10th-grade student who enjoys gaming and game development. Learning Unity and C# to create his own video games."
   },
   {
-    "username": "Simran",
-    "dob": "6/9/2006",
+    "username": "Shruti",
+    "dob": "14/8/2006",
     "age": 18,
     "gender": "Female",
     "profession": "Student",
-    "description": "A focused 12th-grade student excelling in business studies and accounting. Aims to become a financial analyst and enjoys blogging about business trends."
+    "description": "An ambitious 12th-grade student excelling in law and social sciences. Enjoys debating, researching case studies, and aspires to become a lawyer."
   }
-], { timestamps : true }
+],{timestamp:true}
+

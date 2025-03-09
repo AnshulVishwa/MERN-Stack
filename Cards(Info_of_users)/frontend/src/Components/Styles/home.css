@@ -26,32 +26,38 @@ header.flex , .middleDiv {
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: auto;
+}
+
+.middleDiv::-webkit-scrollbar{
+    display: none;
 }
 
 .card {
     flex: 1 1 calc(100% / 3);
+    margin: 2% 0;
 }
+
 #setCard{
-    opacity: 1;
-    transition-duration: 1s;
     width: 60%;
-}
-#setMainCard{
     transition-duration: 1s;
+}
+#setMainCard {
     width: 40%;
     opacity: 1;
-    height: 100%;
+    transition-duration: 1s;
+    height: 80%;
+    position: sticky;
+    top: 1px;
 }
 #hideCard{
     transition-duration: 1s;
     width: 100%;
-    opacity: 1;
 }
 #hideMainCard{
-    transition-duration: 1s;
-    opacity: 0;
-    width: 0%;
+    width:  0%;
     height: 0%;
+    transition-duration: 1s;
 }
 
 .sectionMainCard{
@@ -94,3 +100,39 @@ span.heading.cardInfo {
     font-size: medium;
 }
 
+/* Main Card Setting */
+
+.maincard.flex {
+    height: 80%;
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: larger;
+    text-shadow: 3px 3px 3px rgb(0 0 0 / 25%);
+    border: 1px solid rgb(0 0 0 / 25%);
+    border-radius: 1.5em;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%), inset 4px 4px 4px rgb(0 0 0 / 25%);
+    color: #4C4C4C;
+    position: relative;
+}
+
+.main {
+    width: 75%;
+    text-align: center;
+}
+
+.main.mainName {
+    font-size: x-large;
+}
+
+.main.mainDescription {
+    text-align: left;
+}
+
+.cross {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    color: #4c4c4c;
+}
