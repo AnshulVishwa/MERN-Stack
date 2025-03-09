@@ -9,7 +9,7 @@ header.flex , .middleDiv {
     position: relative;
 }
 
-img {
+.imgage {
     height: 100%;
     z-index: 0;
     position: absolute;
@@ -31,6 +31,42 @@ img {
 .card {
     flex: 1 1 calc(100% / 3);
 }
+#setCard{
+    opacity: 1;
+    transition-duration: 1s;
+    width: 60%;
+}
+#setMainCard{
+    transition-duration: 1s;
+    width: 40%;
+    opacity: 1;
+    height: 100%;
+}
+#hideCard{
+    transition-duration: 1s;
+    width: 100%;
+    opacity: 1;
+}
+#hideMainCard{
+    transition-duration: 1s;
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+}
+
+.sectionMainCard{
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.sectionCard {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex
+;
+    height: 100%;
+}
 
 .cardContent.flex {
     width: 12em;
@@ -50,4 +86,11 @@ img {
     transition: box-shadow 0.2s ease-in-out;
 }
 
+span.heading.cardInfo {
+    font-size: larger;
+    font-weight: 500;
+}
+.cardInfo {
+    font-size: medium;
+}
 
