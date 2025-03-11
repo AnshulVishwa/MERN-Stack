@@ -1,8 +1,9 @@
 const { INFO } = require("../MongoDB/model");
+const jwt = require("jsonwebtoken")
+const SECRET_KEY = "AnshulVidhi3011"
 
 async function handlePostUser(req, res) {
     try {
-        console.log("Body  ->  " , req.body)
         const { name, dob, age, gender, profession, description } = req.body.info;
 
         const result = await INFO.create({
@@ -15,6 +16,9 @@ async function handlePostUser(req, res) {
         });
 
         if (result) {
+            const token = jwt.sign( {...result} , SECRET_KEY )
+            console.log(token)
+            res.cookie("token" , token)
             return res.json({ msg: "User added Successfully", check: true });
         }
     } catch (error) {
@@ -24,6 +28,7 @@ async function handlePostUser(req, res) {
 }
 
 async function handleGetUser( req , res ) {
+    if( req.cookies ) console.log("Cookie Found : " , req.cookies)
     const allUsers = await INFO.find()
     if( allUsers ){
         return res.json({"users" : allUsers})
