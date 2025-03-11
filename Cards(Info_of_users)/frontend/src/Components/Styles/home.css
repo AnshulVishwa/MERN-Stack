@@ -48,7 +48,7 @@ header.flex , .middleDiv {
     transition-duration: 1s;
     height: 80%;
     position: sticky;
-    top: 1px;
+    top: 10%;
 }
 #hideCard{
     transition-duration: 1s;
