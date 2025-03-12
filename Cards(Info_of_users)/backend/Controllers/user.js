@@ -16,11 +16,17 @@ async function handlePostUser(req, res) {
         });
 
         if (result) {
-            const token = jwt.sign( {...result} , SECRET_KEY )
-            console.log(token)
-            res.cookie("token" , token)
+            const token = jwt.sign({ ...result._doc }, SECRET_KEY);
+            res.cookie("token", token, {
+                httpOnly: true,  // Prevent client-side access (more secure)
+                secure: false,   // Set to `true` in production (HTTPS only)
+                domain: "localhost",  // Corrected domain
+                path: "/home" // Makes the cookie available for the entire site
+            });
+        
             return res.json({ msg: "User added Successfully", check: true });
         }
+        
     } catch (error) {
         console.error("Error in handlePostUser:", error);
         return res.status(500).json({ msg: "Some Error Occurred", check: false });
