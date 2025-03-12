@@ -4,16 +4,21 @@ import Navbar from './Navbar'
 import "./Styles/home.css"
 import back_image from "../assets/home.jpg"
 import Card from './Card'
+import { useNavigate } from "react-router";
 
 function Home() {
+  const navigate = useNavigate()
   const [users , setUsers] = useState()
   const [ mainCard , setMainCard ] = useState()
 
   async function GetReq() {
     await axios.get("http://localhost:5000/info", { withCredentials: true })
+
     .then((res) => {
-        console.log("Cookies Sent:", document.cookie);  // Debugging
-        console.log("Response:", res.data);
+        if (res.data.msg){
+          alert(res.data.msg)
+          navigate("/")
+        }
         setUsers(res.data.users);
     })
     .catch((err) => {
