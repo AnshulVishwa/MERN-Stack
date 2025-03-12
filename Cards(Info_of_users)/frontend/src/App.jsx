@@ -40,7 +40,7 @@ function App() {
     alert(FormSubmition(info).msg)
 
     // HTTP method POST request
-    const response = await axios.post( "http://localhost:5000/info" , { info } )
+    const response = await axios.post( "http://localhost:5000/info" , { info } , { withCredentials: true } )
 
     // if got response navigate to further route
     if( response ){

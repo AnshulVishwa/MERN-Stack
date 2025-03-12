@@ -10,16 +10,17 @@ function Home() {
   const [ mainCard , setMainCard ] = useState()
 
   async function GetReq() {
-    await axios.get( "http://localhost:5000/info" )
-    .then( (res) => {
-      // setUsers(() => res.data.users.filter( (v , i) => ( i < 6 ) ) )
-      setUsers(res.data.users)
-    } )
-    .catch( (err) => {
-      alert("Start your backend Buddy")
-      window.location.reload()
-    } )
-  }
+    await axios.get("http://localhost:5000/info", { withCredentials: true })
+    .then((res) => {
+        console.log("Cookies Sent:", document.cookie);  // Debugging
+        console.log("Response:", res.data);
+        setUsers(res.data.users);
+    })
+    .catch((err) => {
+        console.error("Error fetching users:", err);
+    });
+}
+
 
   useEffect( () => {
     GetReq()
