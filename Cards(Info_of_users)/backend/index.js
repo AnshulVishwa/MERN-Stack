@@ -3,14 +3,16 @@ const body_parser = require("body-parser")
 const cors = require("cors")
 const { ConnectTo_MongoDB } = require("./MongoDB/connection")
 const { UserRoute } = require("./Routes/user")
+const cookie_parser = require("cookie-parser")
 
 const app = express()
+app.use( express.json() )
 app.use( body_parser.json() )
+app.use(cookie_parser())
 app.use(cors({
     origin: "http://localhost:5173",  // Allow frontend origin
     credentials: true // Allow sending cookies
 }));
-app.use( express.json() )
 
 app.use( "/info" , UserRoute )
 

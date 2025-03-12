@@ -18,12 +18,10 @@ async function handlePostUser(req, res) {
         if (result) {
             const token = jwt.sign({ ...result._doc }, SECRET_KEY);
             res.cookie("token", token, {
-                httpOnly: true,  // Prevent client-side access (more secure)
-                secure: false,   // Set to `true` in production (HTTPS only)
-                domain: "localhost",  // Corrected domain
-                path: "/home" // Makes the cookie available for the entire site
+                httpOnly: true, // ✅ Makes it secure from JS access
+                secure: false,  // ✅ Keep false for local dev, true for HTTPS
+                sameSite: "lax", // ✅ Allows cross-origin requests (change to "none" if using different origins)
             });
-        
             return res.json({ msg: "User added Successfully", check: true });
         }
         
@@ -34,7 +32,8 @@ async function handlePostUser(req, res) {
 }
 
 async function handleGetUser( req , res ) {
-    if( req.cookies ) console.log("Cookie Found : " , req.cookies)
+    console.log("get")
+    console.log("Cookie Found : " , req.cookies.token)
     const allUsers = await INFO.find()
     if( allUsers ){
         return res.json({"users" : allUsers})
