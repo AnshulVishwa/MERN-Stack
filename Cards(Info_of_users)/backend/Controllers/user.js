@@ -22,6 +22,8 @@ async function handlePostUser(req, res) {
                 secure: false,  // ✅ Keep false for local dev, true for HTTPS
                 sameSite: "lax", // ✅ Allows cross-origin requests (change to "none" if using different origins)
             });
+            console.log("Cookie Set: ", req.cookies.token);
+
             return res.json({ msg: "User added Successfully", check: true });
         }
         
@@ -32,8 +34,12 @@ async function handlePostUser(req, res) {
 }
 
 async function handleGetUser( req , res ) {
-    console.log("get")
-    console.log("Cookie Found : " , req.cookies.token)
+    console.log("Incoming Cookies:", req.cookies.token);
+
+    if( !req.cookies.token ){
+        return res.json( { "msg" : "You have to submit your details first" } )
+    }
+
     const allUsers = await INFO.find()
     if( allUsers ){
         return res.json({"users" : allUsers})
