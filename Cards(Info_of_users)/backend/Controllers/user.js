@@ -16,13 +16,21 @@ async function handlePostUser(req, res) {
         });
 
         if (result) {
-            const token = jwt.sign({ ...result._doc }, SECRET_KEY);
-            res.cookie("token", token, {
-                httpOnly: true, // ✅ Makes it secure from JS access
-                secure: false,  // ✅ Keep false for local dev, true for HTTPS
-                sameSite: "lax", // ✅ Allows cross-origin requests (change to "none" if using different origins)
+            const id = result._doc._id.toString()
+            let ArrayOfObj = [{ id : id }]
+            let value = jwt.sign( { ArrayOfObj } , SECRET_KEY);
+            if( req.cookies.token ){
+                const token = jwt.decode(req.cookies.token)
+                console.log(id)
+                token.ArrayOfObj.push({ id : id })
+                value = jwt.sign( {token} , SECRET_KEY )
+                console.log("value : " , value)
+            }
+            res.cookie("token", value , {
+                httpOnly: true, 
+                secure: false,  
+                sameSite: "lax", 
             });
-            console.log("Cookie Set: ", req.cookies.token);
 
             return res.json({ msg: "User added Successfully", check: true });
         }
@@ -40,9 +48,11 @@ async function handleGetUser( req , res ) {
         return res.json( { "msg" : "You have to submit your details first" } )
     }
 
+    
     const allUsers = await INFO.find()
+    let myCards = jwt.decode(req.cookies.token)
     if( allUsers ){
-        return res.json({"users" : allUsers})
+        return res.json({"users" : allUsers , myCards : myCards})
     }
 }
 

@@ -24,6 +24,10 @@ const Schema = new mongoose.Schema({
     "description" : {
         type : String,
         required : true,
+    },
+    "bool" : {
+        type : Boolean,
+        default : false
     }
 
 } , { timestamps : true })
