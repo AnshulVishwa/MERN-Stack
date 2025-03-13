@@ -1,6 +1,10 @@
 const { INFO } = require("../MongoDB/model");
-const jwt = require("jsonwebtoken")
-const SECRET_KEY = "AnshulVidhi3011"
+const jwt = require("jsonwebtoken");
+const { Secret_Key_vault } = require("../Service/SECRET_key");
+
+const accessingVault = Secret_Key_vault("one")
+const accessingSecretKey = accessingVault("two")
+const SECRET_KEY = accessingSecretKey
 
 async function handlePostUser(req, res) {
     try {
@@ -19,13 +23,15 @@ async function handlePostUser(req, res) {
             const id = result._doc._id.toString()
             let ArrayOfObj = [{ id : id }]
             let value = jwt.sign( { ArrayOfObj } , SECRET_KEY);
-            if( req.cookies.token ){
-                const token = jwt.decode(req.cookies.token)
-                console.log(id)
-                token.ArrayOfObj.push({ id : id })
-                value = jwt.sign( {token} , SECRET_KEY )
-                console.log("value : " , value)
+
+            if (req.cookies.token) {
+                const token = jwt.decode(req.cookies.token) || { ArrayOfObj: [] };
+
+                token.ArrayOfObj.push({ id: id });
+            
+                value = jwt.sign({ ArrayOfObj: token.ArrayOfObj }, SECRET_KEY);
             }
+            
             res.cookie("token", value , {
                 httpOnly: true, 
                 secure: false,  
@@ -42,17 +48,17 @@ async function handlePostUser(req, res) {
 }
 
 async function handleGetUser( req , res ) {
-    console.log("Incoming Cookies:", req.cookies.token);
 
     if( !req.cookies.token ){
         return res.json( { "msg" : "You have to submit your details first" } )
     }
 
-    
     const allUsers = await INFO.find()
     let myCards = jwt.decode(req.cookies.token)
     if( allUsers ){
-        return res.json({"users" : allUsers , myCards : myCards})
+        setTimeout( () => {
+            return res.json({"users" : allUsers , myCards : myCards})
+        } ,2000 )
     }
 }
 

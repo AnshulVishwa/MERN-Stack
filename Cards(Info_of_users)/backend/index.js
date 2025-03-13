@@ -15,8 +15,6 @@ app.use(cors({
     credentials: true
 }));
 
-
-
 app.use( "/info" , UserRoute )
 
 ConnectTo_MongoDB()
