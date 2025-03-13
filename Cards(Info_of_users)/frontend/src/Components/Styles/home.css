@@ -136,3 +136,10 @@ span.heading.cardInfo {
     right: 1em;
     color: #4c4c4c;
 }
+
+#hide{
+    display: none;
+}
+#show{
+    display: block;
+}
