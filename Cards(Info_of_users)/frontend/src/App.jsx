@@ -3,31 +3,9 @@ import './App.css'
 import logo from "./assets/logo.png"
 import FormSubmition from './Service/authentication'
 import axios from "axios"
-// import Loader from './Components/Loader'
 import { useNavigate } from "react-router";
 
 function App() {
-  // // // // // // // // Loader guide
-  // const [ res , setRes ] = useState()
-  // const [ loader , setLoader ] = useState(false)
-  // async function onPageLoadreq() {
-  //   setLoader(true)
-  //   setRes(await axios.get("http://localhost:5000/"))
-  //   setLoader(false)
-  // }
-  // useEffect( () => {
-  //   onPageLoadreq()
-  // } , [] )
-  // useEffect( () => {
-  //   if( loader ){
-  //     document.querySelectorAll("section").forEach((each) => each.style.display = "none" )
-  //   }
-  //   else{
-  //     document.querySelectorAll("section").forEach((each) => each.style.display = "flex" )
-  //   }
-  // } , [loader] )
-  // 
-  // // // // // // // // Loader guide
   
   // navigate method to redirect easily
   const navigate = useNavigate()
@@ -36,8 +14,14 @@ function App() {
   async function handleSubmit(e){
     e.preventDefault()
 
-    // Check for null values
-    alert(FormSubmition(info).msg)
+    // Check for null values and misbehaviour
+    const misBehave = FormSubmition(info)
+    try{
+      if( misBehave.msg ){
+        alert(misBehave.msg)
+        return null
+      }
+    } catch(err){}
 
     // HTTP method POST request
     const response = await axios.post("http://localhost:5000/info", { info }, { withCredentials: true })
@@ -79,7 +63,6 @@ function App() {
 
   return (
     <>
-      {/* { loader && <Loader /> } */}
       <section className="section1 flex">
         <div className="logo-content flex">
           <h1>Welcome to</h1>

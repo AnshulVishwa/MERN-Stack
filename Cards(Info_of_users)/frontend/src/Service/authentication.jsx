@@ -1,18 +1,37 @@
 function check_for_null( info ){
-    if( info.name.trim() == "" ) return { msg : "name is required" }
-    if( info.dob.trim() == "" ) return { msg : "dob is required" }
-    if( info.age.trim() == "" ) return { msg : "age is required" }
-    if( info.gender.trim() == "" ) return { msg : "gender is required" }
-    if( info.profession.trim() == "" ) return { msg : "profession is required" }
-    if( info.description.trim() == "" ) return { msg : "description is required" }
-
-    return { msg : "Form Submitted" }
+    const msg = "submition of all the information is required"
+    if( info.name.trim() == "" ) return { msg }
+    if( info.dob.trim() == "" ) return { msg }
+    if( info.age.trim() == "" ) return { msg }
+    if( info.gender.trim() == "" ) return { msg }
+    if( info.profession.trim() == "" ) return { msg }
+    if( info.description.trim() == "" ) return { msg }
 }
 
 function FormSubmition( info ) {
     const nullValues = check_for_null(info)
-    console.log(nullValues)
-    return nullValues
+    try{
+        if( nullValues.msg ){
+            return nullValues
+        }
+    } 
+    catch(err){}
+    const behaviour = misBehaviour( info )
+    try{
+        if( behaviour.msg ){
+            return behaviour
+        }
+    } 
+    catch(err){}
+}
+
+function misBehaviour( info ){
+    if (/[a-zA-Z]/.test(info.age)) {
+        return { msg: "age does not contain characters" };
+    }
+    if (/[a-zA-Z]/.test(info.dob)) {
+        return { msg: "Date of Birth does not contain characters" };
+    }
 }
 
 export default FormSubmition
