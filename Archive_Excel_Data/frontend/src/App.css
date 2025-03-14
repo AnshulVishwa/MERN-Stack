@@ -43,7 +43,8 @@ input[type="file"] {
   cursor: pointer;
 }
 
-main:hover{
+main:hover , main:has(.filename) {
   box-shadow: inset 0 0 4px white;
   transition-duration: 0.5s;
+  backdrop-filter: sepia(1);
 }
