@@ -6,6 +6,7 @@ const { UserRoute } = require("./Routes/user")
 const cookie_parser = require("cookie-parser")
 
 const app = express()
+
 app.use( express.json() )
 app.use( body_parser.json() )
 
