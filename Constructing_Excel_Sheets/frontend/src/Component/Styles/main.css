@@ -1,0 +1,28 @@
+.filename, .columns {
+    width: 30%;
+    justify-content: start;
+}
+  
+.headingDiv {
+    justify-content: space-evenly;
+    width: 90%;
+    height: 25%;
+    margin: 1em;
+}
+
+.heading {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5em;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0.2em 1em;
+}
