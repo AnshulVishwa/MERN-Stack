@@ -1,0 +1,36 @@
+main.Chats {
+    height: 100%;
+}
+.Chat-background {
+    height: 100%;
+
+    
+}
+.ChatImg {
+    height: 100%;
+    background-image: url(/chatImages/image-background-chat.png);
+    background-size: cover;
+    flex-direction: column;
+}
+.chat {
+    background-color: white;
+    border-radius: 10em;
+    padding: 0.6em 1em;
+    margin: 0.3em 0em;
+}
+.chatSection {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 95%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#right{
+    justify-content: end;
+}
+
+#left{
+    justify-content: start;
+}

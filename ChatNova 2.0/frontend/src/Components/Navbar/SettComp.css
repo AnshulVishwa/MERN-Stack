@@ -1,0 +1,117 @@
+.setting-bar {
+    margin-top: 44.5em;
+    width: 25%;
+    position: absolute;
+    background-image: linear-gradient(0deg, #7554B6, #C4A9F6);
+    height: 100%;
+    flex-direction: column;
+    color: white;
+    animation: AnimationBackground 5s ease-in-out infinite ;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: 1s;
+}
+section.section1-setting {
+    height: 70%;
+    flex-direction: column;
+    border-top-right-radius: 50%;
+    justify-content: start;
+    padding-top: 1em;
+}
+section.section2-profile.flex {
+    height: 20%;
+    width: 90%;
+    justify-content: space-between;
+}
+.back-setting {
+    aspect-ratio: 1 / 1;
+    background-image: linear-gradient(0deg, #746099, #C1A0FF);
+    border-radius: 50%;
+    height: 3em;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+.back-setting:hover{
+    transition: 0.5s;
+    box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
+}
+i.fa-solid.fa-chevron-right {
+    transform: scale(1.5);
+}
+.hide-setting{
+    left: -25%;
+    transition: 1s;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    bottom: 0;
+}
+.show-setting{
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    transition: 1s;
+}
+.heading.flex {
+    gap: 15px;
+    height: 10%;
+    width: 100%;
+    justify-content: start;
+}
+p.set-bars-icon {
+    padding-left: 1em;
+}
+.setContent.flex {
+    height: 85%;
+    width: 100%;
+    font-size: x-large;
+    flex-direction: column;
+    gap: 15px;
+}
+.setting-icon-div {
+    height: 65%;
+    width: 10%;
+}
+.set-user-icon {
+    border-radius: 0;
+    height: 75%;
+    width: 90%;
+}
+.set-content-position{
+    height: 10%;
+    width: 70%;
+    justify-content: start;
+    gap: 10px;
+
+}
+.set-privacy-con {
+    width: 80%;
+    padding-left: 1em;
+}
+img.set-privacySecurity-icon {
+    height: 90%;
+    width: 90%;
+    padding-left: 5px;
+}
+
+img.set-storage-icon {
+    height: 90%;
+    width: 90%;
+}
+
+img.set-aboutus-icon {
+    height: 80%;
+    width: 90%;
+}
+section.section2-setting.flex {
+    width: 80%;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+

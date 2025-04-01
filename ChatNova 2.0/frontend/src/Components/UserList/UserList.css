@@ -1,0 +1,73 @@
+.UserLi{
+    height: 85%;
+    overflow: auto;
+}
+.UserLi::-webkit-scrollbar{
+    display: none;
+}
+.Person, .border-Person {
+    height: 11%;
+    background-color: #9E76BB;
+    border-bottom: 2px solid white;
+    justify-content: start;
+    gap: 1.2em;
+    cursor: pointer;
+}
+
+.border-Person{
+    height: 85%;
+    width: 97%;
+    border: none;
+    padding-left: 1.2em;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 5px;
+    margin-left: 0.4em;
+}
+
+.Person:hover .border-Person{
+    background-color: #835f99;
+    transition-duration: 0.5s;
+}
+
+.PersonProfile{
+    height: 100%;
+}
+.profileImg {
+    height: 65%;
+    border-radius: 50%;
+}
+.PersonName {
+    font-size: large;
+    height: 100%;
+    align-items: start;
+    flex-direction: column;
+}
+span.recentMsg {
+    font-size: small;
+}
+
+.send{
+    color: #006800;
+}
+.received{
+    color: #740000;
+}
+.new-chat{
+    color: white;
+}
+
+.readUnread {
+    flex: 1 1;
+    justify-content: end;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.circleUnRead.flex {
+    aspect-ratio: 1 / 1;
+    height: 50%;
+    border-radius: 50%;
+    background: #800000;
+    color: white;
+}

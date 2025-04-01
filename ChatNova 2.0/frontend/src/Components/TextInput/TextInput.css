@@ -1,0 +1,52 @@
+
+.setGetChat {
+    height: 84%;
+}
+.chatuTexting {
+    height: 8%;
+}
+.Chat-Div{
+    height: 100%;
+    background-color: #9E76BB;
+    font-size: large;
+}
+.chat-icon {
+    background-color: #80589D;
+    border-radius: 50%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    font-size: large;
+}
+.chat-height-width{
+    height: 100%;
+    width: 5%;
+
+}
+.chat-text-input {
+    height: 100%;
+    width: 95%;
+}
+
+.write-chat {
+    height: 80%;
+    width: 98%;
+    border-radius: 2em;
+}
+input.chat-input {
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    padding-left: 1em;
+    background-color: #8A5FAA;
+}
+input.chat-input::placeholder{
+    color: #CAA6E4;
+}
+
+.form-textInput.flex {
+    width: 90%;
+    height: 100%;
+}
+.chatBox {
+    width: 100%;
+}
