@@ -40,3 +40,60 @@
 .read-the-docs {
   color: #888;
 }
+
+.chatBox.flex {
+  height: 80%;
+  width: 40%;
+  overflow: scroll;
+  display: flex
+;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+.box-receiver {
+  width: 100%;
+  display: flex
+;
+  justify-content: end;
+  align-items: center;
+  height: 15%;
+}
+
+.box-sender {
+  width: 100%;
+  display: flex
+;
+  justify-content: start;
+  align-items: center;
+  height: 15%;
+}
+.box {
+  display: flex
+;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sender , .time {
+  font-size: x-small;
+}
+input {
+  height: 90%;
+  /* border: none; */
+  outline: none;
+  border-radius: 0.5em;
+  border: 1px solid grey;
+  width: 30%;
+  padding: 3px;
+  padding-left: 10px;
+}
+
+.sendChatDiv{
+  width: 100%;
+}
