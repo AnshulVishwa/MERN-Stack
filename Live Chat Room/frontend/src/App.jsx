@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import "./App.css"
 
 // Connect to backend
-const socket = io("http://localhost:5000");
+const socket = io("http://192.168.29.207:5000");
 
 function App() {
   const username = useLocation().pathname.split("/")[1];
