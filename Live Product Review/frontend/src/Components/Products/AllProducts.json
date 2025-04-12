@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "name": "Gen Mouse",
+      "price": "$51.23",
+      "company": "Zebronics",
+      "description": "A handheld pointing device used to interact with a computer's graphical user interface (GUI)",
+      "rating": 4.2,
+      "image" : "/mouse.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Bass Boost Headphones",
+      "price": "$89.99",
+      "company": "boAt",
+      "description": "Over-ear wireless headphones with deep bass and noise isolation.",
+      "rating": 4.5,
+      "image" : "/headphone.jpg"
+    },
+    {
+      "id": "3",
+      "name": "ClearSound Headphones",
+      "price": "$74.50",
+      "company": "Sony",
+      "description": "Premium headphones with crystal clear sound and cushioned comfort for long usage.",
+      "rating": 4.7,
+      "image" : "/wiredheadphone.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Pulse Smart Watch",
+      "price": "$129.00",
+      "company": "Noise",
+      "description": "Feature-packed smartwatch with fitness tracking, heart rate monitor, and notifications.",
+      "rating": 4.3,
+      "image" : "/watch.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Retro Digital Watch",
+      "price": "$35.75",
+      "company": "Casio",
+      "description": "Classic digital wristwatch with alarm, stopwatch, and water resistance.",
+      "rating": 4.1,
+      "image" : "/digiwatch.jpg"
+    },
+    {
+      "id": "6",
+      "name": "AirPods Pro Lite",
+      "price": "$149.99",
+      "company": "Apple",
+      "description": "Wireless earbuds with active noise cancellation and spatial audio support.",
+      "rating": 4.8,
+      "image" : "/airpodes.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Buds Air 2",
+      "price": "$69.99",
+      "company": "realme",
+      "description": "Budget-friendly TWS earbuds with long battery life and punchy bass.",
+      "rating": 4.4,
+      "image" : "/airpodes2.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Wired Bass Earphones",
+      "price": "$15.99",
+      "company": "JBL",
+      "description": "High-quality wired earphones with mic and superior bass.",
+      "rating": 4.0,
+      "image" : "/wiredearphone.jpg"
+    }
+  ]
+  

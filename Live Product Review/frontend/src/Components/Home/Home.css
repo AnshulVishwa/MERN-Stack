@@ -1,0 +1,71 @@
+.homePage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/background.png");
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+/* Navbar */
+.nav{
+    height: 10%;
+    flex-direction: column;
+}
+.optionsHome{
+    height: 99%;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.borderHome{
+    height: 1%;
+    background-color: white;
+    width: 45%;
+}
+/* Navbar */
+
+/* Main */
+
+.MainHome{
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+}
+
+.headingHome{
+    font-size: 3em;
+    font-weight:500;
+}
+
+.headingHomeMain.flex {
+    flex-direction: column;
+    align-items: end;
+    margin-left: 1em;
+}
+
+/* Main */
+
+footer{
+    height: 20%;
+    width: 100%;
+    flex-direction: column;
+}
+.textHomeFooter {
+    height: 50%;
+    width: 100%;
+}
+.textHome{
+    font-weight: 500;
+    width: 100%;
+}
+
+.downArrowHomeFooter{
+    animation: ArrowHomeFooter 1s ease-in-out  infinite ;
+    cursor: pointer;
+}
+
+@keyframes ArrowHomeFooter {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}

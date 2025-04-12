@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  color: black;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+.scrollContainer {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.homePage,
+.productsPage {
+  height: 100vh;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
