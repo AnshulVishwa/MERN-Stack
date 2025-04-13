@@ -1,0 +1,31 @@
+.videoDiv{
+    height: 100%;
+    width: 100%;
+    background-color: #00040a;
+}
+.Video404Class{
+    height: 100%;
+}
+.heading404Err {
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: x-large;
+    animation: ArrowHomeFooter 5s ease-in-out  infinite ;
+}
+.button404Err{
+    bottom: 20%;
+    right: 20%;
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    animation: ArrowHomeFooter 5s ease-in-out  infinite ;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.fa-solid.fa-chevron-left{
+    position: relative;
+    transform: translateX(-1em);
+    font-size: x-large;
+}
