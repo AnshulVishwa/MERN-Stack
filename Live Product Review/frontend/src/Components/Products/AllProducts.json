@@ -1,75 +1,170 @@
 [
-    {
-      "id": "1",
-      "name": "Gen Mouse",
-      "price": "$51.23",
-      "company": "Zebronics",
-      "description": "A handheld pointing device used to interact with a computer's graphical user interface (GUI)",
-      "rating": 4.2,
-      "image" : "/mouse.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Bass Boost Headphones",
-      "price": "$89.99",
-      "company": "boAt",
-      "description": "Over-ear wireless headphones with deep bass and noise isolation.",
-      "rating": 4.5,
-      "image" : "/headphone.jpg"
-    },
-    {
-      "id": "3",
-      "name": "ClearSound Headphones",
-      "price": "$74.50",
-      "company": "Sony",
-      "description": "Premium headphones with crystal clear sound and cushioned comfort for long usage.",
-      "rating": 4.7,
-      "image" : "/wiredheadphone.jpg"
-    },
-    {
-      "id": "4",
-      "name": "Pulse Smart Watch",
-      "price": "$129.00",
-      "company": "Noise",
-      "description": "Feature-packed smartwatch with fitness tracking, heart rate monitor, and notifications.",
-      "rating": 4.3,
-      "image" : "/watch.jpg"
-    },
-    {
-      "id": "5",
-      "name": "Retro Digital Watch",
-      "price": "$35.75",
-      "company": "Casio",
-      "description": "Classic digital wristwatch with alarm, stopwatch, and water resistance.",
-      "rating": 4.1,
-      "image" : "/digiwatch.jpg"
-    },
-    {
-      "id": "6",
-      "name": "AirPods Pro Lite",
-      "price": "$149.99",
-      "company": "Apple",
-      "description": "Wireless earbuds with active noise cancellation and spatial audio support.",
-      "rating": 4.8,
-      "image" : "/airpodes.jpg"
-    },
-    {
-      "id": "7",
-      "name": "Buds Air 2",
-      "price": "$69.99",
-      "company": "realme",
-      "description": "Budget-friendly TWS earbuds with long battery life and punchy bass.",
-      "rating": 4.4,
-      "image" : "/airpodes2.jpg"
-    },
-    {
-      "id": "8",
-      "name": "Wired Bass Earphones",
-      "price": "$15.99",
-      "company": "JBL",
-      "description": "High-quality wired earphones with mic and superior bass.",
-      "rating": 4.0,
-      "image" : "/wiredearphone.jpg"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "name": "Gen Mouse",
+    "price": "$51.23",
+    "company": "Zebronics",
+    "description": "A handheld pointing device used to interact with a computer's graphical user interface (GUI)",
+    "rating": 3.5,
+    "image": "/mouse.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" },
+      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed." },
+      { "stars": 4, "comment": "Ergonomic and lightweight." },
+      { "stars": 3, "comment": "Works fine but nothing special." },
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" },
+      { "stars": 1, "comment": "Cursor keeps lagging." },
+      { "stars": 4, "comment": "Better than expected!" },
+      { "stars": 3, "comment": "Basic design but functional." },
+      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed." },
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Bass Boost Headphones",
+    "price": "$89.99",
+    "company": "boAt",
+    "description": "Over-ear wireless headphones with deep bass and noise isolation.",
+    "rating": 3.0,
+    "image": "/headphone.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!" },
+      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price." },
+      { "stars": 4, "comment": "Good for the price." },
+      { "stars": 2, "comment": "Battery drains too fast." },
+      { "stars": 3, "comment": "Average performance." },
+      { "stars": 1, "comment": "Not happy with connectivity." },
+      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!" },
+      { "stars": 2, "comment": "Sound isn't as crisp." },
+      { "stars": 4, "comment": "Fits well and sounds great." },
+      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price." }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "ClearSound Headphones",
+    "price": "$74.50",
+    "company": "Sony",
+    "description": "Premium headphones with crystal clear sound and cushioned comfort for long usage.",
+    "rating": 4.0,
+    "image": "/wiredheadphone.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." },
+      { "stars": 3, "comment": "Good audio, but the wire feels fragile." },
+      { "stars": 4, "comment": "Excellent clarity." },
+      { "stars": 3, "comment": "A bit bulky, but worth it." },
+      { "stars": 5, "comment": "Super comfy and reliable." },
+      { "stars": 4, "comment": "Balanced soundstage." },
+      { "stars": 3, "comment": "Wire gets tangled easily." },
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." },
+      { "stars": 4, "comment": "Comfortable for long hours." },
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Pulse Smart Watch",
+    "price": "$129.00",
+    "company": "Noise",
+    "description": "Feature-packed smartwatch with fitness tracking, heart rate monitor, and notifications.",
+    "rating": 3.0,
+    "image": "/watch.jpg",
+    "reviews": [
+      { "stars": 4, "comment": "Great features at this price point." },
+      { "stars": 2, "comment": "Battery drains too quickly for a smartwatch." },
+      { "stars": 3, "comment": "Looks good but slow UI." },
+      { "stars": 4, "comment": "Handy for daily health tracking." },
+      { "stars": 2, "comment": "Strap quality is poor." },
+      { "stars": 3, "comment": "Decent for beginners." },
+      { "stars": 4, "comment": "Nice companion for runs." },
+      { "stars": 2, "comment": "Laggy performance." },
+      { "stars": 3, "comment": "Basic apps but useful." },
+      { "stars": 4, "comment": "Great features at this price point." }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Retro Digital Watch",
+    "price": "$35.75",
+    "company": "Casio",
+    "description": "Classic digital wristwatch with alarm, stopwatch, and water resistance.",
+    "rating": 3.0,
+    "image": "/digiwatch.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Retro vibes! Solid build and reliable." },
+      { "stars": 1, "comment": "Display faded out in a month. Not happy." },
+      { "stars": 4, "comment": "Nostalgic and accurate." },
+      { "stars": 3, "comment": "Feels cheap but works." },
+      { "stars": 5, "comment": "Perfect for retro lovers!" },
+      { "stars": 2, "comment": "Strap broke early." },
+      { "stars": 1, "comment": "Not waterproof as claimed." },
+      { "stars": 5, "comment": "Retro vibes! Solid build and reliable." },
+      { "stars": 3, "comment": "Simple but useful." },
+      { "stars": 2, "comment": "Backlight too dim." }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "AirPods Pro Lite",
+    "price": "$149.99",
+    "company": "Apple",
+    "description": "Wireless earbuds with active noise cancellation and spatial audio support.",
+    "rating": 4.5,
+    "image": "/airpodes.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
+      { "stars": 4, "comment": "Almost perfect, but a bit pricey." },
+      { "stars": 5, "comment": "Spatial audio is amazing!" },
+      { "stars": 4, "comment": "Great fit and clean design." },
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
+      { "stars": 5, "comment": "Battery life is solid." },
+      { "stars": 4, "comment": "Case feels premium." },
+      { "stars": 5, "comment": "Loving it for my iPhone." },
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
+      { "stars": 4, "comment": "Slight delay with Android." }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Buds Air 2",
+    "price": "$69.99",
+    "company": "realme",
+    "description": "Budget-friendly TWS earbuds with long battery life and punchy bass.",
+    "rating": 4.0,
+    "image": "/airpodes2.jpg",
+    "reviews": [
+      { "stars": 5, "comment": "Excellent value for money!" },
+      { "stars": 3, "comment": "Bass is good but the case feels cheap." },
+      { "stars": 4, "comment": "Comfortable and light." },
+      { "stars": 4, "comment": "Stays in ears during workouts." },
+      { "stars": 5, "comment": "Excellent value for money!" },
+      { "stars": 3, "comment": "Buttons feel weak." },
+      { "stars": 4, "comment": "Good mic clarity." },
+      { "stars": 3, "comment": "Case feels cheap." },
+      { "stars": 5, "comment": "Battery lasts long!" },
+      { "stars": 4, "comment": "Perfect for budget buyers." }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Wired Bass Earphones",
+    "price": "$15.99",
+    "company": "JBL",
+    "description": "High-quality wired earphones with mic and superior bass.",
+    "rating": 2.5,
+    "image": "/wiredearphone.jpg",
+    "reviews": [
+      { "stars": 4, "comment": "Nice sound for the price!" },
+      { "stars": 1, "comment": "One side stopped working after a week." },
+      { "stars": 2, "comment": "Gets tangled too much." },
+      { "stars": 3, "comment": "Okay for short-term use." },
+      { "stars": 1, "comment": "Wires are super delicate." },
+      { "stars": 4, "comment": "Great bass for the budget." },
+      { "stars": 2, "comment": "Mic isn't clear." },
+      { "stars": 1, "comment": "Poor build quality." },
+      { "stars": 4, "comment": "Nice sound for the price!" },
+      { "stars": 3, "comment": "Decent for backups." }
+    ]
+  }
+]

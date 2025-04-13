@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import MainProduct from './Components/Main Product/MainProduct.jsx'
 import Page404 from './Components/404Page/Page404.jsx'
+import ChartOverview from './Components/Main Product/ChartOverview.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>

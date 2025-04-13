@@ -1,34 +1,177 @@
-.mainProductDiv {
-    height: 100vh;
+.MainDivProductChartOverview {
     width: 100vw;
+    overflow-x: hidden;
     background-image: url(/background.svg);
+    background-size: 100vh;
+    height: 100vh;
+}
+.mainProductDivMain-P {
+    height: 100vh;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .navbar-MainP{
     text-shadow: 0px 4px 4px rgb( 0 0 0 / 25% );
-    font-size: larger;
+    font-size: x-large;
+    position: relative;
+    width: 100%;
 }
 
+.backButtonMain-P {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    color: black;
+    cursor: pointer;
+}
+.backButtonMain-P:hover{
+    animation: animateBackButtonOnHover 1s linear  infinite  ;
+}
+@keyframes animateBackButtonOnHover {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.mainContentDiv-MainP.flex {
+    height: 75%;
+    width: 75%;
+}
+.detailsMoreMain-P {
+    height: 60%;
+    position: relative;
+    width: 42%;
+}
 .loader{
     height: 2em;
     width: 2em;
     background-color: black;
     border-radius: 50%;
 }
-
+.innerMainPDiv.flex {
+    height: 100%;
+    width: 90%;
+    justify-content: space-evenly;
+}
 img.ProductImageMainP {
     height: 100%;
     border-radius: 2em;
 }
 .MainP-productImage {
-    height: 40%;
+    height: 50%;
     filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 25%));
 }
 img.BackNameImageMainP {
-    height: 10em;
+    height: 20em;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    animation: animateBlob 25s linear  infinite  ;
+}
+.nameCompanyDes {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
+.nameMainP {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+.companyMainP {
+    font-size: xx-large;
+    font-weight: 400;
+}
+.descriptionMainP {
+    font-size: medium;
+}
 footer.FooterMainP {
     height: 10%;
+}
+
+@keyframes animateBlob{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.FooterMainP{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h3{
+    font-weight: normal;
+    text-shadow: 0px 4px 4px rgb( 0 0 0 / 25% );
+}
+
+
+.overviewCOntainer{
+    height: 100vh;
+    width: 70%;
+}
+
+.OverviewDivProductPage.flex {
+    height: 100%;
+    width: 100%;
+}
+
+.productOverview{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 65%;
+}
+
+.bigHeadingOverview {
+    font-size: 4em;
+    font-weight: 500;
+    width: 80%;
+    text-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.totalReviews{
+    font-size: x-large;
+    font-weight: 500;
+    text-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.doubleArrow , .seeAllReviews{
+    text-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.SVG {
+    filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 25%));
+}
+
+.chevronFront{
+    animation: AnimateChevronFrontBack 3s linear 0.5s infinite;
+}
+.chevronBack{
+    animation: AnimateChevronFrontBack 3s linear 0.5s infinite;
+}
+
+@keyframes AnimateChevronFrontBack {
+    0%{
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-5px) scale(1);
+        opacity: 0;
+    }
+}
+.seeAllReviews{
+    animation: ArrowHomeFooter 5s ease-in-out infinite;
 }
