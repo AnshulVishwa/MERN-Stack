@@ -8,7 +8,7 @@
 body{
   height: 100vh;
   width: 100vw;
-  color: black;
+  background-image: linear-gradient(to right,#C3CFE2 , white);
 }
 
 .flex{
@@ -32,4 +32,9 @@ body{
 
 ::-webkit-scrollbar{
   display: none;
+}
+
+a{
+  text-decoration: none;
+  color:black;
 }

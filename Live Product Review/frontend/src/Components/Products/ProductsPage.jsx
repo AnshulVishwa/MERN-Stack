@@ -1,5 +1,6 @@
 import "./Products.css"
 import productData from "./AllProducts.json"
+import { Link } from "react-router";
 
 function ProductsPage() {
   return (
@@ -7,7 +8,7 @@ function ProductsPage() {
         <main className='mainProductDiv flex'>
           {
             productData.map( ( v , i ) => (
-              <div key={i} className="PcontentDiv flex">
+              <Link to={`/product/${v.name}`} key={i} className="PcontentDiv flex">
                 <div className="imageP">
                   <img className="imageP-image" src={v.image}></img>
                 </div>
@@ -23,7 +24,7 @@ function ProductsPage() {
                   <div className="priceP">{v.price}</div>
                   <div className="descriptionP">{v.description}</div>
                 </div>
-              </div>
+              </Link>
             ) )
           }
         </main>
