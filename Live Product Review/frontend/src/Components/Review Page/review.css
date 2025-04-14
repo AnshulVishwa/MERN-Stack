@@ -20,17 +20,17 @@
 .boxRP {
     width: 30%;
     align-items: center;
-    display: flex
-;
+    display: flex;
     justify-content: start;
     padding: 0.5em 1em;
     cursor: pointer;
     transition: 1s;
+    border-radius: 0.5em;
 }
 #filterBoxRP{
     padding: 0.5em 1em;
     border-radius: 5em;
-    background-image: linear-gradient(to top, #C3CFE2, transparent);
+    background-image: linear-gradient(to top, #C3CFE2, #ffffff4d);
     box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
     font-size: large;
     font-weight: 300;
@@ -43,11 +43,11 @@
 
 .boxRP:hover{
     border-radius: 5em;
-    background-image: linear-gradient(to top, #C3CFE2, transparent);
+    background-image: linear-gradient(to top, #C3CFE2, #ffffff4d);
     box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
     transition: 0.5s;
+    transition: border-radius 2s;
 }
-
 #star {
     background-image: linear-gradient(to top, #FA709A, #FEE140);
     background-clip: text;
@@ -73,6 +73,11 @@
     min-width: 37%;
     position: relative;
     height: 75%;
+    animation: ANimateBoxes 5s ease-in-out infinite;
+    transform: translateX(-1em);
+}
+.animateHeadingMAINRP{
+    animation: ANimateBoxes 5s ease-in-out infinite;
 }
 .divCOntentEnclosing.flex {
     flex-direction: column;
@@ -102,4 +107,32 @@
     padding: 0.2em 0.5em;
     border-radius: 5em;
     font-size: small;
+}
+
+.detailsEnclosingDiv {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 90%;
+}
+
+@keyframes ANimateBoxes {
+    0%{ transform: translateX(0em); }
+    50%{ transform: translateX(1em); }
+    100%{ transform: translateX(0em); }
+}
+
+.upArrowProductReviewPage {
+    height: 2em;
+    background-image: linear-gradient(to top, #C3CFE2, #ffffff);
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgb( 0 0 0 / 25% );
+    cursor: pointer;
+}
+.upArrowProductReviewPage:hover{
+    animation: animateBackButtonOnHover 1s linear  infinite  ;
 }

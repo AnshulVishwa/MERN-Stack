@@ -5,6 +5,7 @@ import ChartOverview from './ChartOverview';
 import { useParams } from "react-router-dom";
 import AllProducts from "../Products/AllProducts.json";
 import OverviewDetails from './OverviewDetails';
+import ReviewPage from '../Review Page/ReviewPage';
 
 function MainProduct() {
   const { productName } = useParams();
@@ -76,6 +77,9 @@ function MainProduct() {
           <h3>{data?.rating} Rating Product</h3>
           <svg
             className="downArrowHomeFooter"
+            onClick={() => {
+              document.querySelector( ".OverviewDivProductPage" ).scrollIntoView({behaviour : "smooth"})
+            }}
             width="24"
             height="25"
             viewBox="0 0 24 25"
@@ -94,6 +98,12 @@ function MainProduct() {
           <OverviewDetails data={data} />
         </div>
       )}
+
+      {
+        !load && data && (
+          <ReviewPage review={data.reviews}/>
+        )
+      }
     </div>
   );
 }

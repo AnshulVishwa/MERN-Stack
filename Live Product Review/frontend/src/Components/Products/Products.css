@@ -8,7 +8,6 @@
 main.mainProductDiv.flex {
     height: 100%;
     width: 85%;
-    overflow-y: scroll;
     scroll-behavior: smooth;
     display: grid
 ;
@@ -16,6 +15,12 @@ main.mainProductDiv.flex {
     grid-template-rows: repeat(25%);
     grid-auto-rows: 50%;
     grid-column-gap: 10%;
+    background-image: url(/background.svg);
+    background-size: contain;
+}
+
+.marginBottomProductsPage {
+    height: 1em;
 }
 
 .PcontentDiv.flex {

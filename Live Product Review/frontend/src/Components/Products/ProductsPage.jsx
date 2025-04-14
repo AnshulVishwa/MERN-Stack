@@ -27,6 +27,7 @@ function ProductsPage() {
               </Link>
             ) )
           }
+          <div className="marginBottomProductsPage"></div>
         </main>
     </div>
   )
