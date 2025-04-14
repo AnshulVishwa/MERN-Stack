@@ -85,6 +85,10 @@ img.BackNameImageMainP {
     height: 100%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
+canvas{
+    animation: ArrowHomeFooter 5s ease-in-out infinite;
+    cursor: pointer;
+}
 
 .nameMainP {
     font-size: 3.5em;
@@ -155,20 +159,47 @@ h3{
     filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 25%));
 }
 
-.chevronFront{
-    animation: AnimateChevronFrontBack 3s linear 0.5s infinite;
+.ChevronArr1{
+    animation: AnimateChevron1 1.5s linear infinite;
 }
-.chevronBack{
-    animation: AnimateChevronFrontBack 3s linear 0.5s infinite;
+.ChevronArr2{
+    animation: AnimateChevron2 1.5s linear infinite;
 }
-
-@keyframes AnimateChevronFrontBack {
+.ChevronArr3{
+    animation: AnimateChevron3 1.5s linear infinite;
+}
+#SayChevron1 , #SayChevron2 , #SayChevron3{
+    transform: translateX(0);
+    font-size: xx-large;
+    position: absolute;
+}
+@keyframes AnimateChevron1 {
     0%{
-        transform: translate(0px) scale(1);
+        transform: translate(20px) scale(1);
         opacity: 1;
     }
     100%{
-        transform: translate(-5px) scale(1);
+        transform: translate(10px) scale(1);
+        opacity: 0;
+    }
+}
+@keyframes AnimateChevron2 {
+    0%{
+        transform: translate(20px) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(5px) scale(1);
+        opacity: 0;
+    }
+}
+@keyframes AnimateChevron3 {
+    0%{
+        transform: translate(20px) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0px) scale(1);
         opacity: 0;
     }
 }

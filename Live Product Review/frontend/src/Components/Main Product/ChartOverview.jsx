@@ -1,80 +1,95 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-function ChartOverview({data , showChart}) {
-  const chartRef = useRef(null); 
-  let myChart = null;
+function ChartOverview({ data, showChart }) {
+  const chartRef = useRef(null);
+  const chartInstanceRef = useRef(null);
 
   useEffect(() => {
-  const ctx = chartRef.current.getContext('2d');
+    console.log("Rendering ChartOverview");
+    if (!chartRef.current) {
+      console.warn("Canvas ref is null!");
+      return;
+    }
 
-  // Create gradients
-  const gradient1 = ctx.createLinearGradient(0, 0, 400, 400);
-  gradient1.addColorStop(0, '#92C5F9');
-  gradient1.addColorStop(1, '#4394E5');
+    if (!data || !data.reviews || !Array.isArray(data.reviews)) {
+      console.warn("Invalid or missing data:", data);
+      return;
+    }
 
-  const gradient2 = ctx.createLinearGradient(0, 0, 400, 400);
-  gradient2.addColorStop(0, '#4394E5');
-  gradient2.addColorStop(1, '#0066CC');
+    if (!showChart) {
+      console.log("Chart not visible, skipping render.");
+      return;
+    }
 
-  const gradient3 = ctx.createLinearGradient(0, 0, 400, 400);
-  gradient3.addColorStop(0, '#0066CC');
-  gradient3.addColorStop(1, '#004D99');
+    const ctx = chartRef.current.getContext('2d');
+    if (!ctx) {
+      console.warn("Failed to get 2D context from canvas.");
+      return;
+    }
 
-  const gradient4 = ctx.createLinearGradient(0, 0, 400, 400);
-  gradient4.addColorStop(0, '#004D99');
-  gradient4.addColorStop(1, '#003366');
+    // Destroy any previous chart instance
+    if (chartInstanceRef.current) {
+      chartInstanceRef.current.destroy();
+    }
 
-  const gradient5 = ctx.createLinearGradient(0, 0, 400, 400);
-  gradient5.addColorStop(0, '#003366');
-  gradient5.addColorStop(1, '#001f33');
+    // Create gradients
+    const makeGradient = (start, end) => {
+      const gradient = ctx.createLinearGradient(0, 0, 400, 400);
+      gradient.addColorStop(0, start);
+      gradient.addColorStop(1, end);
+      return gradient;
+    };
 
-  if ((myChart || !showChart) && data) {
-    myChart.destroy();
-  }
-  const stars = [0, 0, 0, 0, 0];
-data.reviews.forEach((v) => stars[v.stars - 1]++);
+    const gradients = [
+      makeGradient('#92C5F9', '#4394E5'),
+      makeGradient('#4394E5', '#0066CC'),
+      makeGradient('#0066CC', '#004D99'),
+      makeGradient('#004D99', '#003366'),
+      makeGradient('#003366', '#001f33'),
+    ];
 
-const labels = [];
-const filteredStars = [];
+    const stars = [0, 0, 0, 0, 0];
+    data.reviews.forEach((v) => stars[v.stars - 1]++);
 
-stars.forEach((v, i) => {
-  if (v !== 0) {
-    labels.push(`${i + 1} Star`);
-    filteredStars.push(v);
-  }
-});
+    const labels = [];
+    const filteredStars = [];
 
-myChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: labels,
-    datasets: [
-      {
-        label: `Out of ${data.reviews.length} People`,
-        data: filteredStars,
-        backgroundColor: [
-          gradient1,
-          gradient2,
-          gradient3,
-          gradient4,
-          gradient5,
-        ],
-        hoverOffset: 4,
+    stars.forEach((v, i) => {
+      if (v !== 0) {
+        labels.push(`${i + 1} Star`);
+        filteredStars.push(v);
+      }
+    });
+
+    chartInstanceRef.current = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: `Out of ${data.reviews.length} People`,
+          data: filteredStars,
+          backgroundColor: gradients.slice(0, filteredStars.length),
+          hoverOffset: 4,
+        }],
       },
-    ],
-  },
-});
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+      }
+    });
 
-
-  return () => {
-    myChart.destroy();
-  };
-}, [showChart]);
+    return () => {
+      if (chartInstanceRef.current) {
+        chartInstanceRef.current.destroy();
+        chartInstanceRef.current = null;
+      }
+    };
+  }, [data, showChart]);
 
   return (
     <div className="overviewCOntainer flex">
-      <div className='flex' style={{ width: '50%', height: '60%' }}>
+      <div className='flex' style={{ width: '100%', height: '400px' }}>
         <canvas ref={chartRef}></canvas>
       </div>
     </div>

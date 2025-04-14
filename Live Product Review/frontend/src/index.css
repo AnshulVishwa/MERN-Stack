@@ -5,10 +5,10 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to right,#C3CFE2 , white);
+  background-image: linear-gradient(to right, #C3CFE2, #e4ecf7);
 }
 
 .flex{

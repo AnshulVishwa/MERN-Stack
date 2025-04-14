@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import MainProduct from './Components/Main Product/MainProduct.jsx'
 import Page404 from './Components/404Page/Page404.jsx'
-import ChartOverview from './Components/Main Product/ChartOverview.jsx'
+import ReviewPage from './Components/Review Page/ReviewPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Route path='/' element={ <App /> } />
       <Route path='/product/:productName' element={ <MainProduct /> } />
       <Route path='/404Err' element={ <Page404 /> } />
+      <Route path='/s' element = {<ReviewPage />}/>
     </Routes>
   </BrowserRouter>,
 )

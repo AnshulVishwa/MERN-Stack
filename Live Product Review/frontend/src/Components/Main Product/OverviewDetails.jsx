@@ -6,10 +6,11 @@ function OverviewDetails({data}) {
         <div className="bigHeadingOverview">Overview of All Reviews</div>
         <div className="totalReviews">Total { data.reviews.length } Reviews</div>
         <div className="doubleArrow">
-        <svg className='SVG flex' width="100" height="100" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-            <path className='chevronFront' d="M13.7335 6.78033C14.0263 6.48744 14.0263 6.01256 13.7335 5.71967C13.4406 5.42678 12.9657 5.42678 12.6728 5.71967L6.42279 11.9697C6.1299 12.2626 6.1299 12.7374 6.42279 13.0303L12.6728 19.2803C12.9657 19.5732 13.4406 19.5732 13.7335 19.2803C14.0263 18.9874 14.0263 18.5126 13.7335 18.2197L8.01379 12.5L13.7335 6.78033Z" fill="#000000"/>
-            <path className='chevronBack' d="M18.2335 6.78033C18.5263 6.48744 18.5263 6.01256 18.2335 5.71967C17.9406 5.42678 17.4657 5.42678 17.1728 5.71967L10.9228 11.9697C10.6299 12.2626 10.6299 12.7374 10.9228 13.0303L17.1728 19.2803C17.4657 19.5732 17.9406 19.5732 18.2335 19.2803C18.5263 18.9874 18.5263 18.5126 18.2335 18.2197L12.5138 12.5L18.2335 6.78033Z" fill="#000000"/>
-        </svg>
+        <div className='SVG flex' width="100" height="100" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+          <i id='SayChevron1' class="fa-solid fa-chevron-left ChevronArr1"></i>
+          <i id='SayChevron2' class="fa-solid fa-chevron-left ChevronArr2"></i>
+          <i id='SayChevron3' class="fa-solid fa-chevron-left ChevronArr3"></i>
+        </div>
 
         </div>
         <div className="seeAllReviews flex">See all Reviews <svg width="25" height="25" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">

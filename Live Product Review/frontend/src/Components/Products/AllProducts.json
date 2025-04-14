@@ -8,16 +8,16 @@
     "rating": 3.5,
     "image": "/mouse.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" },
-      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed." },
-      { "stars": 4, "comment": "Ergonomic and lightweight." },
-      { "stars": 3, "comment": "Works fine but nothing special." },
-      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" },
-      { "stars": 1, "comment": "Cursor keeps lagging." },
-      { "stars": 4, "comment": "Better than expected!" },
-      { "stars": 3, "comment": "Basic design but functional." },
-      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed." },
-      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!" }
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!", "dateTime": "4/8/2025, 10:05:11 AM" },
+      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed.", "dateTime": "4/7/2025, 2:18:43 PM" },
+      { "stars": 4, "comment": "Ergonomic and lightweight.", "dateTime": "4/6/2025, 5:30:10 PM" },
+      { "stars": 3, "comment": "Works fine but nothing special.", "dateTime": "4/6/2025, 8:12:51 PM" },
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!", "dateTime": "4/5/2025, 9:49:30 AM" },
+      { "stars": 1, "comment": "Cursor keeps lagging.", "dateTime": "4/4/2025, 11:25:01 AM" },
+      { "stars": 4, "comment": "Better than expected!", "dateTime": "4/3/2025, 1:44:15 PM" },
+      { "stars": 3, "comment": "Basic design but functional.", "dateTime": "4/2/2025, 3:56:02 PM" },
+      { "stars": 2, "comment": "Stopped working after a few weeks. Disappointed.", "dateTime": "4/1/2025, 4:37:47 PM" },
+      { "stars": 5, "comment": "Smooth and responsive. Great for everyday tasks!", "dateTime": "3/31/2025, 6:22:19 PM" }
     ]
   },
   {
@@ -29,16 +29,16 @@
     "rating": 3.0,
     "image": "/headphone.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!" },
-      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price." },
-      { "stars": 4, "comment": "Good for the price." },
-      { "stars": 2, "comment": "Battery drains too fast." },
-      { "stars": 3, "comment": "Average performance." },
-      { "stars": 1, "comment": "Not happy with connectivity." },
-      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!" },
-      { "stars": 2, "comment": "Sound isn't as crisp." },
-      { "stars": 4, "comment": "Fits well and sounds great." },
-      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price." }
+      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!", "dateTime": "4/8/2025, 9:15:12 AM" },
+      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price.", "dateTime": "4/7/2025, 2:41:45 PM" },
+      { "stars": 4, "comment": "Good for the price.", "dateTime": "4/6/2025, 4:25:13 PM" },
+      { "stars": 2, "comment": "Battery drains too fast.", "dateTime": "4/5/2025, 11:50:29 AM" },
+      { "stars": 3, "comment": "Average performance.", "dateTime": "4/4/2025, 3:23:01 PM" },
+      { "stars": 1, "comment": "Not happy with connectivity.", "dateTime": "4/3/2025, 5:10:12 PM" },
+      { "stars": 5, "comment": "Incredible bass and comfort. Perfect for music lovers!", "dateTime": "4/2/2025, 10:22:50 AM" },
+      { "stars": 2, "comment": "Sound isn't as crisp.", "dateTime": "4/1/2025, 1:55:39 PM" },
+      { "stars": 4, "comment": "Fits well and sounds great.", "dateTime": "3/31/2025, 7:11:18 PM" },
+      { "stars": 1, "comment": "Sound cuts off occasionally. Not worth the price.", "dateTime": "3/30/2025, 6:37:44 PM" }
     ]
   },
   {
@@ -50,16 +50,16 @@
     "rating": 4.0,
     "image": "/wiredheadphone.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." },
-      { "stars": 3, "comment": "Good audio, but the wire feels fragile." },
-      { "stars": 4, "comment": "Excellent clarity." },
-      { "stars": 3, "comment": "A bit bulky, but worth it." },
-      { "stars": 5, "comment": "Super comfy and reliable." },
-      { "stars": 4, "comment": "Balanced soundstage." },
-      { "stars": 3, "comment": "Wire gets tangled easily." },
-      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." },
-      { "stars": 4, "comment": "Comfortable for long hours." },
-      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy." }
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy.", "dateTime": "4/8/2025, 8:20:02 AM" },
+      { "stars": 3, "comment": "Good audio, but the wire feels fragile.", "dateTime": "4/7/2025, 3:36:12 PM" },
+      { "stars": 4, "comment": "Excellent clarity.", "dateTime": "4/6/2025, 6:22:11 PM" },
+      { "stars": 3, "comment": "A bit bulky, but worth it.", "dateTime": "4/5/2025, 9:45:00 AM" },
+      { "stars": 5, "comment": "Super comfy and reliable.", "dateTime": "4/4/2025, 12:14:32 PM" },
+      { "stars": 4, "comment": "Balanced soundstage.", "dateTime": "4/3/2025, 1:53:09 PM" },
+      { "stars": 3, "comment": "Wire gets tangled easily.", "dateTime": "4/2/2025, 4:20:57 PM" },
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy.", "dateTime": "4/1/2025, 11:10:42 AM" },
+      { "stars": 4, "comment": "Comfortable for long hours.", "dateTime": "3/31/2025, 6:47:35 PM" },
+      { "stars": 5, "comment": "Best headphones I’ve ever used! Clear sound and super comfy.", "dateTime": "3/30/2025, 10:36:50 AM" }
     ]
   },
   {
@@ -71,16 +71,16 @@
     "rating": 3.0,
     "image": "/watch.jpg",
     "reviews": [
-      { "stars": 4, "comment": "Great features at this price point." },
-      { "stars": 2, "comment": "Battery drains too quickly for a smartwatch." },
-      { "stars": 3, "comment": "Looks good but slow UI." },
-      { "stars": 4, "comment": "Handy for daily health tracking." },
-      { "stars": 2, "comment": "Strap quality is poor." },
-      { "stars": 3, "comment": "Decent for beginners." },
-      { "stars": 4, "comment": "Nice companion for runs." },
-      { "stars": 2, "comment": "Laggy performance." },
-      { "stars": 3, "comment": "Basic apps but useful." },
-      { "stars": 4, "comment": "Great features at this price point." }
+      { "stars": 4, "comment": "Great features at this price point.", "dateTime": "4/8/2025, 10:31:11 AM" },
+      { "stars": 2, "comment": "Battery drains too quickly for a smartwatch.", "dateTime": "4/7/2025, 12:47:59 PM" },
+      { "stars": 3, "comment": "Looks good but slow UI.", "dateTime": "4/6/2025, 4:01:14 PM" },
+      { "stars": 4, "comment": "Handy for daily health tracking.", "dateTime": "4/5/2025, 11:17:44 AM" },
+      { "stars": 2, "comment": "Strap quality is poor.", "dateTime": "4/4/2025, 2:44:33 PM" },
+      { "stars": 3, "comment": "Decent for beginners.", "dateTime": "4/3/2025, 3:55:20 PM" },
+      { "stars": 4, "comment": "Nice companion for runs.", "dateTime": "4/2/2025, 10:06:11 AM" },
+      { "stars": 2, "comment": "Laggy performance.", "dateTime": "4/1/2025, 1:15:27 PM" },
+      { "stars": 3, "comment": "Basic apps but useful.", "dateTime": "3/31/2025, 5:19:55 PM" },
+      { "stars": 4, "comment": "Great features at this price point.", "dateTime": "3/30/2025, 7:00:00 PM" }
     ]
   },
   {
@@ -92,16 +92,16 @@
     "rating": 3.0,
     "image": "/digiwatch.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Retro vibes! Solid build and reliable." },
-      { "stars": 1, "comment": "Display faded out in a month. Not happy." },
-      { "stars": 4, "comment": "Nostalgic and accurate." },
-      { "stars": 3, "comment": "Feels cheap but works." },
-      { "stars": 5, "comment": "Perfect for retro lovers!" },
-      { "stars": 2, "comment": "Strap broke early." },
-      { "stars": 1, "comment": "Not waterproof as claimed." },
-      { "stars": 5, "comment": "Retro vibes! Solid build and reliable." },
-      { "stars": 3, "comment": "Simple but useful." },
-      { "stars": 2, "comment": "Backlight too dim." }
+      { "stars": 5, "comment": "Retro vibes! Solid build and reliable.", "dateTime": "4/8/2025, 8:14:35 AM" },
+      { "stars": 1, "comment": "Display faded out in a month. Not happy.", "dateTime": "4/7/2025, 11:09:58 AM" },
+      { "stars": 4, "comment": "Nostalgic and accurate.", "dateTime": "4/6/2025, 2:44:11 PM" },
+      { "stars": 3, "comment": "Feels cheap but works.", "dateTime": "4/5/2025, 3:20:47 PM" },
+      { "stars": 5, "comment": "Perfect for retro lovers!", "dateTime": "4/4/2025, 9:00:01 AM" },
+      { "stars": 2, "comment": "Strap broke early.", "dateTime": "4/3/2025, 1:22:16 PM" },
+      { "stars": 1, "comment": "Not waterproof as claimed.", "dateTime": "4/2/2025, 10:43:29 AM" },
+      { "stars": 5, "comment": "Retro vibes! Solid build and reliable.", "dateTime": "4/1/2025, 3:45:50 PM" },
+      { "stars": 3, "comment": "Simple but useful.", "dateTime": "3/31/2025, 4:30:18 PM" },
+      { "stars": 2, "comment": "Backlight too dim.", "dateTime": "3/30/2025, 6:14:23 PM" }
     ]
   },
   {
@@ -113,16 +113,16 @@
     "rating": 4.5,
     "image": "/airpodes.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
-      { "stars": 4, "comment": "Almost perfect, but a bit pricey." },
-      { "stars": 5, "comment": "Spatial audio is amazing!" },
-      { "stars": 4, "comment": "Great fit and clean design." },
-      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
-      { "stars": 5, "comment": "Battery life is solid." },
-      { "stars": 4, "comment": "Case feels premium." },
-      { "stars": 5, "comment": "Loving it for my iPhone." },
-      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!" },
-      { "stars": 4, "comment": "Slight delay with Android." }
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!", "dateTime": "4/8/2025, 9:22:47 AM" },
+      { "stars": 4, "comment": "Almost perfect, but a bit pricey.", "dateTime": "4/7/2025, 1:36:32 PM" },
+      { "stars": 5, "comment": "Spatial audio is amazing!", "dateTime": "4/6/2025, 4:22:19 PM" },
+      { "stars": 4, "comment": "Great fit and clean design.", "dateTime": "4/5/2025, 2:45:50 PM" },
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!", "dateTime": "4/4/2025, 3:18:11 PM" },
+      { "stars": 5, "comment": "Battery life is solid.", "dateTime": "4/3/2025, 4:48:03 PM" },
+      { "stars": 4, "comment": "Case feels premium.", "dateTime": "4/2/2025, 10:15:23 AM" },
+      { "stars": 5, "comment": "Loving it for my iPhone.", "dateTime": "4/1/2025, 11:30:10 AM" },
+      { "stars": 5, "comment": "Mind-blowing audio quality and noise cancelation!", "dateTime": "3/31/2025, 6:40:56 PM" },
+      { "stars": 4, "comment": "Slight delay with Android.", "dateTime": "3/30/2025, 3:00:00 PM" }
     ]
   },
   {
@@ -134,16 +134,16 @@
     "rating": 4.0,
     "image": "/airpodes2.jpg",
     "reviews": [
-      { "stars": 5, "comment": "Excellent value for money!" },
-      { "stars": 3, "comment": "Bass is good but the case feels cheap." },
-      { "stars": 4, "comment": "Comfortable and light." },
-      { "stars": 4, "comment": "Stays in ears during workouts." },
-      { "stars": 5, "comment": "Excellent value for money!" },
-      { "stars": 3, "comment": "Buttons feel weak." },
-      { "stars": 4, "comment": "Good mic clarity." },
-      { "stars": 3, "comment": "Case feels cheap." },
-      { "stars": 5, "comment": "Battery lasts long!" },
-      { "stars": 4, "comment": "Perfect for budget buyers." }
+      { "stars": 5, "comment": "Excellent value for money!", "dateTime": "4/8/2025, 10:00:01 AM" },
+      { "stars": 3, "comment": "Bass is good but the case feels cheap.", "dateTime": "4/7/2025, 11:25:35 AM" },
+      { "stars": 4, "comment": "Comfortable and light.", "dateTime": "4/6/2025, 1:42:42 PM" },
+      { "stars": 4, "comment": "Stays in ears during workouts.", "dateTime": "4/5/2025, 2:00:33 PM" },
+      { "stars": 5, "comment": "Excellent value for money!", "dateTime": "4/4/2025, 4:30:28 PM" },
+      { "stars": 3, "comment": "Buttons feel weak.", "dateTime": "4/3/2025, 5:43:18 PM" },
+      { "stars": 4, "comment": "Good mic clarity.", "dateTime": "4/2/2025, 9:35:11 AM" },
+      { "stars": 3, "comment": "Case feels cheap.", "dateTime": "4/1/2025, 2:11:57 PM" },
+      { "stars": 5, "comment": "Battery lasts long!", "dateTime": "3/31/2025, 3:30:20 PM" },
+      { "stars": 4, "comment": "Perfect for budget buyers.", "dateTime": "3/30/2025, 6:12:42 PM" }
     ]
   },
   {
@@ -155,16 +155,16 @@
     "rating": 2.5,
     "image": "/wiredearphone.jpg",
     "reviews": [
-      { "stars": 4, "comment": "Nice sound for the price!" },
-      { "stars": 1, "comment": "One side stopped working after a week." },
-      { "stars": 2, "comment": "Gets tangled too much." },
-      { "stars": 3, "comment": "Okay for short-term use." },
-      { "stars": 1, "comment": "Wires are super delicate." },
-      { "stars": 4, "comment": "Great bass for the budget." },
-      { "stars": 2, "comment": "Mic isn't clear." },
-      { "stars": 1, "comment": "Poor build quality." },
-      { "stars": 4, "comment": "Nice sound for the price!" },
-      { "stars": 3, "comment": "Decent for backups." }
+      { "stars": 4, "comment": "Nice sound for the price!", "dateTime": "4/8/2025, 11:11:11 AM" },
+      { "stars": 1, "comment": "One side stopped working after a week.", "dateTime": "4/7/2025, 2:12:09 PM" },
+      { "stars": 2, "comment": "Gets tangled too much.", "dateTime": "4/6/2025, 3:14:55 PM" },
+      { "stars": 3, "comment": "Okay for short-term use.", "dateTime": "4/5/2025, 1:01:44 PM" },
+      { "stars": 1, "comment": "Wires are super delicate.", "dateTime": "4/4/2025, 12:30:15 PM" },
+      { "stars": 4, "comment": "Great bass for the budget.", "dateTime": "4/3/2025, 2:00:00 PM" },
+      { "stars": 2, "comment": "Mic isn't clear.", "dateTime": "4/2/2025, 4:49:12 PM" },
+      { "stars": 1, "comment": "Poor build quality.", "dateTime": "4/1/2025, 11:57:57 AM" },
+      { "stars": 4, "comment": "Nice sound for the price!", "dateTime": "3/31/2025, 5:13:00 PM" },
+      { "stars": 3, "comment": "Decent for backups.", "dateTime": "3/30/2025, 2:40:30 PM" }
     ]
   }
 ]
