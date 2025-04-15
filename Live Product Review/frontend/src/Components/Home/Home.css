@@ -60,7 +60,7 @@ footer{
 }
 
 .downArrowHomeFooter{
-    animation: ArrowHomeFooter 1s ease-in-out  infinite ;
+    animation: ArrowHomeFooter 1s ease-in-out infinite;
     cursor: pointer;
 }
 

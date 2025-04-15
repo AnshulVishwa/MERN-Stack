@@ -17,16 +17,7 @@
     transition: 1s;
     margin-top: 10%;
 }
-.boxRP {
-    width: 30%;
-    align-items: center;
-    display: flex;
-    justify-content: start;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    transition: 1s;
-    border-radius: 0.5em;
-}
+
 #filterBoxRP{
     padding: 0.5em 1em;
     border-radius: 5em;
@@ -40,7 +31,16 @@
     transition: 0.5s;
     box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
 }
-
+.boxRP {
+    width: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 0.5em;
+}
 .boxRP:hover{
     border-radius: 5em;
     background-image: linear-gradient(to top, #C3CFE2, #ffffff4d);
@@ -135,4 +135,23 @@
 }
 .upArrowProductReviewPage:hover{
     animation: animateBackButtonOnHover 1s linear  infinite  ;
+}
+
+.CreateReview.flex {
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    justify-content: space-evenly;
+}
+.headingPostReview {
+    font-size: xxx-large;
+    font-weight: 500;
+    text-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.form {
+    height: 50%;
+    font-size: x-large;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
 }

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './App.css'
 import Home from './Components/Home/Home'
 import ProductsPage from './Components/Products/ProductsPage'
