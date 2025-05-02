@@ -1,0 +1,41 @@
+h1{
+    height: 10%;
+}
+.main {
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 75%;
+}
+.left.startingMsg.msg1 {
+    font-size: large;
+    justify-content: center;
+}
+
+.left , .right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    justify-content: start;
+}
+.right{
+    justify-content: end;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 1em 1.5em;
+    margin: 0em 0.5em;
+    border-radius: 7em;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    background-image: linear-gradient(45deg, white, #4facfe);
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
+    transition: 0.5s;
+}
