@@ -8,8 +8,13 @@ async function getDataFromDB( req , res ) {
 
 async function postDataIntoDB( req , res ) {
     if( !req.body ) return res.json({msg : "Body is required"})
+        console.log(req.body)
     const { Day , Gym , FastFood , EveningExercise , Performance } = req.body
-    if( !Day || !Gym || !FastFood || !EveningExercise || !Performance ) 
+    if( Day==undefined || 
+        Gym==undefined || 
+        FastFood==undefined || 
+        EveningExercise==undefined || 
+        Performance==undefined ) 
         return res.json({msg : "Something is Missing"})
     await MODEL.create({
         Day,

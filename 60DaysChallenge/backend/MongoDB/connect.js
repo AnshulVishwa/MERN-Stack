@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
-require("dotenv").config({path : "../Security/.env"})
-const url = process.env.URL_M
+const url = process.env.M_URL
+console.log(url)
 
 async function ConnectMongoDB() {
     await mongoose.connect(url)

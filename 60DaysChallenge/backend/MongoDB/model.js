@@ -28,7 +28,7 @@ const Schema = new mongoose.Schema({
     }
 })
 
-const MODEL = mongoose.model( "/data" , Schema )
+const MODEL = mongoose.model( "data" , Schema )
 
 module.exports = {
     MODEL
