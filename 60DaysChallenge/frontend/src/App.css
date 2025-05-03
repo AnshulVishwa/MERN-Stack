@@ -1,6 +1,22 @@
-h1{
-    height: 10%;
-}
+h2 {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(270deg, #fff, #000);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateH2 5s linear infinite;
+  }
+  
+  @keyframes animateH2 {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
 .main {
     height: 80%;
     flex-direction: column;
@@ -10,19 +26,47 @@ h1{
 .left.startingMsg.msg1 {
     font-size: large;
     justify-content: center;
+    padding: 0.5em 2em;
+    background-color: white;
+    border-radius: 5em;
+    width: fit-content;
+    animation: animateShadow 3s linear infinite ;
+}
+
+.questionsMainContainer {
+    height: 80%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container1, .container2, .container3 {
+    animation: animateCOntainer 5s ease-in  infinite  ;
+    background-image: linear-gradient(to right, white, #C6D6FF);
+    height: 25%;
+    width: 40%;
+    margin: 0 5%;
+    border-radius: 50em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+span.identify {
+    position: absolute;
+    top: 0em;
+    right: 0;
+    background: #4285F4;
+    color: white;
+    padding: 0.2em 1em;
+    border-radius: 5em;
 }
 
 .left , .right{
     width: 80%;
     display: flex;
     align-items: center;
-}
-
-.left{
-    justify-content: start;
-}
-.right{
-    justify-content: end;
+    justify-content: space-evenly;
 }
 button {
     border: none;
@@ -31,11 +75,34 @@ button {
     margin: 0em 0.5em;
     border-radius: 7em;
     box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
-    background-image: linear-gradient(45deg, white, #4facfe);
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+span {
+    font-size: small;
     cursor: pointer;
 }
 
 button:hover{
     box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
     transition: 0.5s;
+}
+
+@keyframes animateStart {
+    0% { font-size: 5em; }
+    50%{ font-size: 0.5em; }
+}
+
+@keyframes animateCOntainer {
+    0%{transform: translate(10px);  }
+    50%{transform: translate(-10px); }
+    100%{transform: translate(10px); }
+}
+
+@keyframes animateShadow {
+    0%{ box-shadow: 2px 2px 4px rgb(0 0 0 / 25%); }
+    25%{ box-shadow: 3px 3px 4px rgb(0 0 0 / 25%); }
+    50%{ box-shadow: 6px 6px 4px rgb(0 0 0 / 25%); }
+    100%{ box-shadow: 4px 4px 4px rgb(0 0 0 / 25%); }
 }
