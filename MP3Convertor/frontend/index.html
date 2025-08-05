@@ -1,0 +1,35 @@
+<body>
+    <form id="convert-form">
+        <input placeholder="Enter a Valid URL" name="url" required>
+        <button type="submit">Convert</button>
+    </form>
+    <div id="loading" style="display:none">⏳ Converting...</div>
+</body>
+
+<script>
+    document.getElementById('convert-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const url = document.querySelector("input").value.trim();
+        const encodedURL = encodeURIComponent(url);
+        const downloadURL = `http://localhost:5000/download?url=${encodedURL}`;
+
+        const loading = document.getElementById('loading');
+        loading.style.display = 'block';
+
+        try {
+            const a = document.createElement('a');
+            a.href = downloadURL;
+            a.textContent = downloadURL
+            a.setAttribute("target" , "_main")
+            a.download = "converted.mp3";
+            a.click()
+            document.body.appendChild(a);
+        } catch (err) {
+            alert("Download failed.");
+            console.error(err);
+        } finally {
+            loading.style.display = 'none'; // Hide loading in all cases
+        }
+    });
+</script>
