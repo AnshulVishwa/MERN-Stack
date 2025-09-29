@@ -16,9 +16,10 @@ function App() {
 
   useEffect(() => {
     async function init() {
-      const pc = new RTCPeerConnection({
+      // ✅ CORRECT: Assigning to the .current property of the ref
+      pc.current = new RTCPeerConnection({
         iceServers: [
-          { urls: "stun:stun.l.google.com:19302" }, // Google STUN
+          { urls: "stun:stun.l.google.com:19302" },
           {
             urls: "turn:openrelay.metered.ca:80",
             username: "openrelayproject",
@@ -27,14 +28,15 @@ function App() {
         ]
       });
 
-
       // Local stream
       const stream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: true,
       });
       localStream.current = stream;
-      localVideo.current.srcObject = stream;
+      if (localVideo.current) {
+        localVideo.current.srcObject = stream;
+      }
 
       stream.getTracks().forEach((track) => {
         pc.current.addTrack(track, stream);
@@ -42,7 +44,9 @@ function App() {
 
       // Remote stream
       pc.current.ontrack = (event) => {
-        remoteVideo.current.srcObject = event.streams[0];
+        if (remoteVideo.current) {
+          remoteVideo.current.srcObject = event.streams[0];
+        }
       };
 
       // ICE candidates
@@ -57,12 +61,14 @@ function App() {
 
       // When someone else joins → send offer
       socket.on("user-joined", async () => {
+        console.log("Another user joined, creating offer...");
         const offer = await pc.current.createOffer();
         await pc.current.setLocalDescription(offer);
         socket.emit("offer", roomId, offer);
       });
 
       socket.on("offer", async (offer) => {
+        console.log("Received offer, creating answer...");
         await pc.current.setRemoteDescription(new RTCSessionDescription(offer));
         const answer = await pc.current.createAnswer();
         await pc.current.setLocalDescription(answer);
@@ -70,6 +76,7 @@ function App() {
       });
 
       socket.on("answer", async (answer) => {
+        console.log("Received answer.");
         await pc.current.setRemoteDescription(new RTCSessionDescription(answer));
       });
 
@@ -91,6 +98,17 @@ function App() {
     }
 
     init();
+
+    // Cleanup function
+    return () => {
+      if (pc.current) {
+        pc.current.close();
+      }
+      socket.off("user-joined");
+      socket.off("offer");
+      socket.off("answer");
+      socket.off("ice-candidate");
+    };
   }, [roomId]);
 
   // Toggle mic
