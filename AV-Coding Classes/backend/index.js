@@ -6,7 +6,7 @@ const app = express();
 const server = createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: "https://classes-kappa.vercel.app/" },
+  cors: { origin: "https://classes-kappa.vercel.app/" }
 });
 
 io.on("connection", (socket) => {
