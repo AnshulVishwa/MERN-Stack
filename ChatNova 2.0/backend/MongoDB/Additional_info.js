@@ -6,7 +6,7 @@ const users = new mongoose.Schema( {
 const Schema = new mongoose.Schema( {
     "username" : {
         type : String,
-        required : true,
+        ref : "user_details"
     },
     "archieve_users" : [ users ],
     "profile_picture" : {
